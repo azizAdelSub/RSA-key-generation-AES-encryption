@@ -1,6 +1,6 @@
 import os, pyaes, sys, argparse
 
-def encrypt(pub_key, plain_text, secret_cip):
+def encrypt(pub_key, plain_text, secret_cip): 
     n, e = open(pub_key, 'r').read().split(',')
     plain_text = open(plain_text, 'rb').read()
     aes_key = os.urandom(16)
